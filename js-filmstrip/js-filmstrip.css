@@ -1,0 +1,62 @@
+.display-none{
+    display: none;
+}
+
+.js-filmstrip{
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    height: min-content;
+}
+
+.js-filmstrip.js-filmstrip-vertical{
+    flex-direction: column;
+    width: min-content;
+    height: max-content;
+}
+
+.js-filmstrip .js-filmstrip-body{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+
+.js-filmstrip button {
+    min-width: 30px;
+    min-height: 30px;
+    border: 1px solid transparent;
+    background-color: rgb(230, 230, 230);
+    background-repeat: no-repeat, repeat;
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+}
+
+.js-filmstrip .js-filmstrip-right-arrow{
+    background-image: url("../icons/right-arrow.png");
+}
+
+.js-filmstrip .js-filmstrip-left-arrow{
+    background-image: url("../icons/left-arrow.png");
+}
+
+.js-filmstrip .js-filmstrip-up-arrow{
+    background-image: url("../icons/up-arrow.png");
+}
+
+.js-filmstrip .js-filmstrip-down-arrow{
+    background-image: url("../icons/down-arrow.png");
+}
+
+.js-filmstrip button:hover{
+    background-color: rgb(200, 200, 200);
+}
+.js-filmstrip button:active{
+    background-color: rgb(230, 230, 230);
+    opacity: 0.7;
+}
+
+.js-filmstrip .js-filmstrip-body.flex-direction-col{
+    flex-direction: column;
+}

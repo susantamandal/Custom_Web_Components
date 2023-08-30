@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+</head>
+
+<body>
+    <header>
+        <h1>Components</h1>
+    </header>
+    <main>
+        <!-- <div style="display: flex; gap:10px">
+            <js-switch></js-switch>
+            <js-switch value='true'></js-switch>
+            <js-switch value="false" disabled></js-switch>
+            <js-switch value="true" disabled></js-switch>
+        </div>
+        <br>
+        <div style="display: flex; gap:10px">
+            <js-lov lov-title="List of Values" value="Sample">
+            </js-lov>
+            <js-lov lov-title="List of Values" value="read-only" read-only="true">
+            </js-lov>
+            <js-lov lov-title="List of Values" value="disabled" disabled="true">
+            </js-lov>
+        </div>
+        <br>
+        <button id='index-btn' type="button" >Open Modal Window</button>
+        <js-modal id='modal-element-id' header-title="Visual Studio">
+        </js-modal>
+        <br>
+        <br> -->
+        <js-filmstrip direction="vertica" max-item-per-page="4">
+            <div style="width: 50px; background-color: blueviolet; height: 30px; text-align: center; margin-left: 5px;">
+                twelve
+            </div>
+            <div style="width: 50px; background-color: blueviolet; height: 30px; text-align: center; margin-left: 5px;">
+                thirteen
+            </div>
+            <div style="width: 50px; background-color: blueviolet; height: 30px; text-align: center; margin-left: 5px;">
+                fouteen
+            </div>
+            <js-for-each>
+                <template>
+                    <div style="width: 50px; background-color: blueviolet; height: 30px; text-align: center; margin-left: 5px;">
+                        ten
+                    </div>
+                </template>
+            </js-for-each>
+        </js-filmstrip>
+    </main>
+    <script src="index.js" type="module"></script>
+</body>
+
+</html>
